@@ -7,6 +7,7 @@ import ContactExperience from "../components/models/contact/ContactExperience";
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -20,7 +21,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true);
 
     try {
       await emailjs.sendForm(
@@ -30,12 +31,16 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
 
-      // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
+      setSuccessMessage("✅ Message envoyé avec succès !");
+
+      // Disparition du message après 5 secondes
+      setTimeout(() => setSuccessMessage(""), 5000);
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      console.error("EmailJS Error:", error);
+      setSuccessMessage("❌ Une erreur est survenue. Veuillez réessayer.");
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
