@@ -324,8 +324,12 @@ section {
 
 /* Hero text slider starts */
 .slide {
-  display: inline-block;
+  display: block;
   flex-direction: column;
+  height: 2.5rem; /* même hauteur que le mot */
+  overflow: hidden;
+  position: relative;
+  margin-left: 0.5rem; /* petit espace après "Transforme des" */
   transition: all cubic-bezier(0.71, 0.03, 0.34, 1);
 }
 
@@ -333,6 +337,13 @@ section {
   display: flex;
   flex-direction: column;
   animation: wordSlider 21s infinite cubic-bezier(0.9, 0.01, 0.3, 0.99);
+}
+
+.wrapper span {
+  height: 2.5rem; /* fixe chaque ligne à la même hauteur */
+  display: flex;
+  align-items: center; /* vertical centering */
+  gap: 0.5rem;
 }
 
 @keyframes wordSlider {
