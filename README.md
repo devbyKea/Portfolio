@@ -18,9 +18,11 @@ Je suis **Keanu**, développeur web full stack basé à Bordeaux, passionné par
 
 ---
 
+
 ## 🖼️ Aperçu du projet
 
-![screenshot](./images/Ipad CV_00000.png")
+![Aperçu du portfolio](./public/images/ipad-cv-preview.png)
+
 
 ---
 
