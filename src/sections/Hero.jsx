@@ -52,7 +52,7 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Salut ! Je suis Keanu, un développeur en herbe basé à Bordeaux avec une passion pour le code.
+              Salut ! Je suis Keanu, un développeur en herbe basé à Bordeaux, <br/> avec une passion pour le code.
             </p>
 
             <Button
