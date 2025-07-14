@@ -20,6 +20,7 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-responsive": "^10.0.1",
+    "react-toastify": "^11.0.5",
     "tailwindcss": "^4.1.10",
     "three": "^0.177.0"
   },
