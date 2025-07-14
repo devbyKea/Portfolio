@@ -14,13 +14,13 @@ Je suis **Keanu**, développeur web full stack basé à Bordeaux, passionné par
 - **Framer Motion** — Pour des animations douces et dynamiques
 - **CSS Modules / Tailwind CSS** — Pour un design réactif et élégant
 - **Vite** — Pour un bundling ultra rapide
-- **GitHub Pages** — Déploiement gratuit et rapide
+- **OVH** — Déploiement rapide
 
 ---
 
 ## 🖼️ Aperçu du projet
 
-![screenshot](./assets/preview.png)
+![screenshot](./images/Ipad CV_00000.png")
 
 ---
 
