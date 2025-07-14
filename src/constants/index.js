@@ -88,11 +88,11 @@ const techStackImgs = [
     imgPath: "/images/logos/vue-react.png",
   },
   {
-    name: "Frontend Développeur",
+    name: "Frontend",
     imgPath: "/images/logos/html.png",
   },
   {
-    name: "Backend Développeur",
+    name: "Backend",
     imgPath: "/images/logos/backend.png",
   },
   {
