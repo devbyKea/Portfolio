@@ -10,6 +10,14 @@ import App from './App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <ToastContainer />
+    <ToastContainer 
+      position="top-right"
+      autoClose={4000}
+      hideProgressBar={false}
+      closeOnClick
+      pauseOnHover
+      draggable
+      theme="dark"
+    />
   </StrictMode>,
 )
